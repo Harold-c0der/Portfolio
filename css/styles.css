@@ -1,3 +1,4 @@
+/* Estilos generales */
 *{
     margin: 0;
     padding: 0;
@@ -10,22 +11,48 @@ body{
     background-color: #011024;
 }
 
+/* estilos del header */
+
 .header_container{
+    width: 100%;
+    height:auto;
+    padding-bottom: 15px;
     display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #EBAE3D;
 }
 
-p{
-    color: #5CA3FF;
-
-}
-
-.menu{
-    font-size: 15px;
+.header_container .figure{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
     margin-top: 20px;
 }
-.menu_item-list{
-    display: inline-block;
-    
+.header_container .figure p{
+    color: #5CA3FF;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 0 #EBAE3D;
+}
+.header_container .nav-menu{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.header_container .nav-menu .menu{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.header_container .nav-menu .menu li{
+    margin: 10px;
 }
 
 .menu_item{
@@ -38,6 +65,8 @@ p{
     color: #EBAE3D;
     border-bottom: 2px solid #EBAE3D;
 }
+
+/* Estilos de la presentacion */
 
 .hijo_pagina{
     width: 275px;
@@ -235,10 +264,6 @@ h1{
     background-image: url(ts.png);
 }
 
-.nav-menu{
-    display: flex;
-    margin-left: 500px;
-}
 
 .figure{
     margin: 5px;
