@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 900;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #011024;
+}
+
+.header_container{
+    display: flex;
+}
+
+p{
+    color: #5CA3FF;
+
+}
+
+.menu{
+    font-size: 15px;
+    margin-top: 20px;
+}
+.menu_item-list{
+    display: inline-block;
+    
+}
+
+.menu_item{
+    text-decoration: none;   
+    color: #5CA3FF;
+    padding-bottom: 3px;
+}
+
+.menu_item:hover{
+    color: #EBAE3D;
+    border-bottom: 2px solid #EBAE3D;
+}
+
+.hijo_pagina{
+    width: 275px;
+    height: 50px;
+    border: 1px solid #5CA3FF;
+    background-color: #5CA3FF ;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 10px 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hijo_pagina2{
+    width: 275px;
+    height: 50px;
+    border: 1px solid #5CA3FF;
+    background-color: #5CA3FF ;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 10px 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hijo_pagina::before{
+    content: "Enviar";
+        
+}
+.hijo_pagina:hover::before{
+    content: "Press Start";  
+}
+
+.hijo_pagina:hover{
+    border: 4px solid #011024;
+    color: #EBAE3D;
+    background-color:#011024;
+    text-shadow: 3px 1px 0px rgba(203, 50, 209, 1);
+    
+}
+
+.hijo_pagina2::before{
+    content: "Linkedin";
+        
+}
+.hijo_pagina2:hover::before{
+    content: "Press Start";  
+}
+
+.hijo_pagina2:hover{
+    border: 4px solid #011024;
+    color: #EBAE3D;
+    background-color:#011024;
+    text-shadow: 3px 1px 0px rgba(203, 50, 209, 1);
+    
+}
+
+.input{
+    box-sizing: border-box;
+    height: 25px;
+    padding: 20px 10px;
+    width: 275px;
+    
+}
+
+.textarea{
+    resize: none; 
+
+}
+
+.contactame{
+    margin: 30px;
+}
+
+.contactame_form{
+    background-color: transparent;
+    border: 1px solid #5CA3FF;
+    color: #EBAE3D;
+    margin: 5px 0px;  
+}
+
+.contactame_form::selection{
+    background-color: white;
+    color:#5CA3FF ;
+}
+.contactame_form:focus{
+    outline: none;
+}
+
+.Content{
+    font-size: 13px;
+    margin: 4px;
+}
+
+.Content_obli{
+    font-size: 10px;
+    margin: 10px 0px;
+}
+
+.name{
+    color:#5CA3FF ;
+    text-align: center;
+    margin: 40px;
+}
+
+.presentacion{
+display: flex;
+margin: 40px;
+position: relative;
+top: 40px;
+flex-direction: column;
+text-align: center;
+height: 500px;
+}
+
+h1{
+    transition: color, text-shadow 0.5s;
+}
+
+.presentacion h1:hover{
+    color: #EBAE3D;
+    text-shadow: 3px 1px 0px rgba(203, 50, 209, 1);;
+}
+
+ .especial{
+     font-size: 20px;
+     color: #EBAE3D;
+ }
+
+ .resumen{
+     margin: 20px;
+     padding: 0;
+ }
+
+ .typescript_logo{
+     height: 158px ;
+     width: 164px ;
+ }
+
+ .wrap{
+     width: 1100px;
+     margin: 50px auto;
+     display: flex;
+     justify-content: center;
+ }
+
+.tarjeta-wrap{
+    margin: 20px;
+    -webkit-perspective: 800;
+    perspective: 800;
+   
+}
+
+.tarjeta{
+    background-color: #193f70;
+    width:200px ;
+    height: 200px;
+    position: relative;
+    transform-style:preserve-3d ;
+    transition: .7s ease;
+    
+
+}
+
+.adelante, .atras{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.adelante{
+    width: 100%;
+}
+
+.atras{
+    transform: rotateY(180deg);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-wrap:hover .tarjeta{
+    transform: rotateY(180deg);
+}
+
+.card1{
+    background-image: url(js.png);
+}
+.card2{
+    background-image: url(ts.png);
+}
+
+.nav-menu{
+    display: flex;
+    margin-left: 500px;
+}
+
+.figure{
+    margin: 5px;
+}
+
